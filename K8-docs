@@ -1,0 +1,4 @@
+How to Reserve CPU & Memory Resources in Kubernetes
+Why we reserve this CPU or memory ? because in K8 Yaml to avoid lot of memory is being used by only those pods into the cluster. Pods can only use a limited cpu and memory.
+- kubectl -n default top pods <pod-name>
+- kubectl describe node <node-name>
